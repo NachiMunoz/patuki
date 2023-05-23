@@ -37,10 +37,11 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Saira Stencil One", cursive;
+  letter-spacing: 4px;
 }
 
-/* HEADER */
+/* =============== HEADER =============== */
 
 header {
   background-color: var(--rojo);
@@ -108,11 +109,11 @@ header {
 
 .nav_menu {
   position: fixed;
-  top: 5rem;
+  top: 6rem;
   bottom: 0;
   background-color: var(--rojo);
   width: 100%;
-  height: 100vh;
+  height: 85vh;
   left: 0;
   display: flex;
   justify-content: space-evenly;
@@ -120,9 +121,10 @@ header {
   align-items: center;
   clip-path: circle(0% at 50% 50%);
   transition: clip-path 1s ease-in-out;
-  font-size: 40px;
+  font-size: 30px;
   z-index: 1000;
 }
+/* =============== CONTADOR =============== */
 
 /* =============== CONTADOR =============== */
 .banner {
@@ -153,20 +155,7 @@ header {
 
 /* =============== SCROLLER =============== */
 
-.products {
-  color: var(--blanco);
-  margin: 1rem auto;
-  width: 98%;
-  max-width: 1200px;
-}
-
-.title-products {
-  margin-top: 3rem;
-  margin-left: 10px;
-  letter-spacing: 1px;
-}
-
-.container {
+.container_galeria {
   margin: 1rem auto;
   width: 98%;
 
@@ -180,19 +169,20 @@ header {
   gap: 12px;
 }
 
-.container .items {
+/* .container_galeria .items {
   border-radius: 8px;
-  background-color: #fff;
+  background-color: var(--rojo);
   cursor: pointer;
   box-shadow: 0 0 6px var(--lineas);
-}
+} */
 
 .items img {
-  width: 8rem;
-  margin: 0.8rem;
+  width: 20rem;
+  margin: 0.3rem;
+  border-radius: 4px;
 }
 
-.text_container {
+/* .text_container {
   border-top: 1px solid #9e9e9e;
   padding: 0.3rem;
 }
@@ -211,7 +201,7 @@ header {
   color: #1fcc00;
   font-weight: 600;
   font-size: 0.8em;
-}
+} */
 .container::-webkit-scrollbar {
   display: none;
 }
@@ -238,3 +228,85 @@ header {
 }
 
 /* =============== SCROLLER =============== */
+
+/* =============== FOOTER =============== */
+.footer {
+  background-color: var(--rojo);
+  width: 100%;
+}
+
+.footer_container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer_container img {
+  width: 50%;
+}
+
+.footer_conteiner .footer_ a {
+  font-size: 3rem;
+}
+.footer_container .footer_ a .fa-instagram {
+  font-size: 30px;
+  padding: 10px;
+  color: var(--negro);
+}
+.footer_container .footer_ a .fa-instagram:hover {
+  color: #d9337c;
+  transform: scale(1.2);
+  transition: all 0.4s;
+}
+.footer_container .footer_ a .fa-facebook {
+  font-size: 30px;
+  padding: 10px;
+  color: var(--negro);
+}
+.footer_container .footer_ a .fa-facebook:hover {
+  color: #3865c5;
+  transform: scale(1.2);
+  transition: all 0.4s;
+}
+.footer_container .footer_ a .fa-youtube {
+  font-size: 30px;
+  padding: 10px;
+  color: var(--negro);
+}
+
+.footer_container .footer_ a .fa-youtube:hover {
+  color: #e43933;
+  transform: scale(1.2);
+  transition: all 0.4s;
+}
+.footer_container .footer_ a .fa-twitter {
+  font-size: 30px;
+  padding: 10px;
+  color: var(--negro);
+}
+.footer_container .footer_ a .fa-twitter:hover {
+  color: #1d9bf0;
+  transform: scale(1.2);
+  transition: all 0.4s;
+}
+.footer_container .footer_ a .fa-spotify {
+  font-size: 30px;
+  padding: 10px;
+  color: var(--negro);
+}
+.footer_container .footer_ a .fa-spotify:hover {
+  color: #1db954;
+  transform: scale(1.2);
+  transition: all 0.4s;
+}
+
+.footer_container p {
+  font-size: 1em;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+}
