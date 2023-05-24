@@ -179,6 +179,88 @@ header {
 
 /* =============== SCROLLER =============== */
 
+/* =============== DISCOGRAFIA =============== */
+.container_discos {
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  z-index: 0;
+}
+
+.container_discos .cards_discos {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  background: var(--rojo);
+  margin: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container_discos .cards_discos .img_discos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 100000;
+  border-radius: 20px;
+  overflow: hidden;
+  transform-origin: top;
+}
+
+.container_discos .cards_discos:hover .img_discos {
+  transform: translateY(30px) scale(0.5);
+}
+
+.container_discos .cards_discos .img_discos img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container_discos .cards_discos .img_discos img:hover {
+  filter: grayscale(1);
+  transition: 0.5s;
+}
+
+.container_discos .cards_discos .content_discos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  transform: translateY(100%);
+  transition: 0.5s;
+}
+
+.container_discos .cards_discos:hover .content_discos {
+  transform: translateY(0);
+}
+
+.container_discos .cards_discos .content_discos .details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container_discos .cards_discos .content_discos .details .h2_discos {
+  color: #e0e0e0;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+/* =============== DISCOGRAFIA =============== */
+
 /* =============== FOOTER =============== */
 .footer {
   background-color: var(--rojo);
