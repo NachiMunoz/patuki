@@ -364,6 +364,10 @@ header {
     font-size: 2em;
     font-weight: 500;
   }
+
+  .nav_menu {
+    font-size: 40px;
+  }
 }
 
 @media (min-width: 900px) {
@@ -379,5 +383,8 @@ header {
     margin: 10px;
     border-radius: 20px;
     overflow: hidden;
+  }
+  .nav_menu {
+    font-size: 50px;
   }
 }
