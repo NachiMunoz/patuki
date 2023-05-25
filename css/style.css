@@ -180,6 +180,18 @@ header {
 
 /* =============== SCROLLER =============== */
 
+/* =============== FRASE=============== */
+.frase {
+  background-image: url(../img/arena.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 1rem;
+  margin: 10px 0;
+  text-align: center;
+}
+/* =============== FRASE=============== */
+
 /* =============== DISCOGRAFIA =============== */
 .container_discos {
   position: relative;
@@ -266,12 +278,14 @@ header {
 
 .integrantes {
   font-size: 20px;
+  text-align: center;
 }
 
 .integrantes p {
   color: var(--blanco);
 }
 .integrantes p:hover {
+  cursor: pointer;
   text-shadow: 2px 2px 2px var(--blanco);
 }
 
@@ -360,6 +374,9 @@ header {
 }
 
 @media (min-width: 600px) {
+  .nav_logo {
+    width: 70%;
+  }
   .items img {
     width: 30rem;
     margin: 1rem;
@@ -392,6 +409,10 @@ header {
   .integrantes {
     font-size: 30px;
   }
+
+  .frase {
+    font-size: 30px;
+  }
 }
 
 @media (min-width: 900px) {
@@ -410,6 +431,11 @@ header {
   }
   .nav_menu {
     font-size: 50px;
+    top: 2.3em;
+  }
+
+  .logo_menu {
+    font-size: 35px;
   }
   .integrantes {
     font-size: 40px;
