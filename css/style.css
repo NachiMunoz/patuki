@@ -185,6 +185,7 @@ header {
   width: 100%;
   flex-wrap: wrap;
   z-index: 0;
+  padding: 2rem;
 }
 
 .container_discos .cards_discos {
@@ -233,8 +234,6 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
   align-items: flex-end;
   padding-bottom: 20px;
   transform: translateY(100%);
@@ -255,7 +254,7 @@ header {
 
 .container_discos .cards_discos .content_discos .details .h2_discos {
   color: #e0e0e0;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 500;
 }
 
@@ -349,10 +348,36 @@ header {
     margin-top: 2rem;
     border-radius: 16px;
   }
+
+  .container_discos .cards_discos {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    background: var(--rojo);
+    margin: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .container_discos .cards_discos .content_discos .details .h2_discos {
+    color: #e0e0e0;
+    font-size: 2em;
+    font-weight: 500;
+  }
 }
+
 @media (min-width: 900px) {
   .items img {
     width: 35rem;
     margin: 1rem;
+  }
+  .container_discos .cards_discos {
+    position: relative;
+    width: 350px;
+    height: 450px;
+    background: var(--rojo);
+    margin: 10px;
+    border-radius: 20px;
+    overflow: hidden;
   }
 }
