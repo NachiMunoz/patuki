@@ -33,4 +33,4 @@ const countdown = (deadLine, element, finalMsj) => {
   }, 1000);
 };
 
-countdown("Jul 15 2023 19:00:00 GMT-0300", "contador", "Día feliz feliz feliz feliz");
+countdown("Jul 15 2023 19:00:00 GMT-0300", "contador", "VERTE Y FESTEJAR TAMBIÉN");

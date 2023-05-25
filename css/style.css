@@ -33,7 +33,8 @@
 
 .body {
   min-height: 100vh;
-  background: linear-gradient(rgba(16, 16, 16, 0.7), rgba(16, 16, 16, 0.7)), url(../img/bgc.png);
+  background: linear-gradient(rgba(16, 16, 16, 0.7), rgba(16, 16, 16, 0.7)),
+    url(../img/fondo-textura-hormigon-oscuro.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -258,7 +259,27 @@ header {
   font-weight: 500;
 }
 
-/* =============== DISCOGRAFIA =============== */
+/* =============== DISCOGRAFIA =============== * /
+
+
+/* =============== INTEGRANTES =============== */
+
+.integrantes {
+  font-size: 20px;
+}
+
+.integrantes p {
+  color: var(--blanco);
+}
+.integrantes p:hover {
+  text-shadow: 2px 2px 2px var(--blanco);
+}
+
+.integrantes span {
+  color: var(--rojo);
+}
+
+/* =============== INTEGRANTES =============== */
 
 /* =============== FOOTER =============== */
 .footer {
@@ -368,6 +389,9 @@ header {
   .nav_menu {
     font-size: 40px;
   }
+  .integrantes {
+    font-size: 30px;
+  }
 }
 
 @media (min-width: 900px) {
@@ -386,5 +410,8 @@ header {
   }
   .nav_menu {
     font-size: 50px;
+  }
+  .integrantes {
+    font-size: 40px;
   }
 }
