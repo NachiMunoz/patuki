@@ -279,6 +279,7 @@ header {
 .integrantes {
   font-size: 20px;
   text-align: center;
+  position: relative;
 }
 
 .integrantes p {
@@ -293,18 +294,66 @@ header {
   color: var(--rojo);
 }
 
+.pato {
+  border-radius: 50%;
+  width: 10%;
+  position: absolute;
+  top: 160px;
+  left: 30px;
+  filter: drop-shadow(0 0 4px var(--blanco));
+  opacity: 0;
+}
+
+#patos:hover .pato {
+  opacity: 1;
+  transition: 300ms;
+}
+
+.pato1 {
+  border-radius: 50%;
+  width: 10%;
+  position: absolute;
+  top: 160px;
+  right: 30px;
+  filter: drop-shadow(0 0 4px var(--blanco));
+}
+.pato2 {
+  border-radius: 50%;
+  width: 10%;
+  position: absolute;
+  top: 260px;
+  left: 70px;
+  filter: drop-shadow(0 0 4px var(--blanco));
+}
+.pato3 {
+  border-radius: 50%;
+  width: 10%;
+  position: absolute;
+  top: 260px;
+  right: 70px;
+  filter: drop-shadow(0 0 4px var(--blanco));
+}
+
+.pato4 {
+  border-radius: 50%;
+  width: 10%;
+  position: absolute;
+  top: 360px;
+  left: 90px;
+  filter: drop-shadow(0 0 4px var(--blanco));
+}
 /* =============== INTEGRANTES =============== */
 
 /* =============== FOOTER =============== */
 .footer {
   background-color: var(--rojo);
   width: 100%;
+  margin-top: auto;
 }
 
 .footer_container {
   width: 90%;
   max-width: 1200px;
-  margin: auto;
 }
 
 .footer_container img {
