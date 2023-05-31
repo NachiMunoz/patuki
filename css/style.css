@@ -545,6 +545,7 @@ header {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    padding: 0 4rem;
   }
 
   .nav_item2 {
@@ -554,7 +555,15 @@ header {
   }
 
   .nav_item2:hover {
-    text-shadow: 0 0 2px var(--blanco);
+    text-shadow: 0 0px 4px var(--blanco);
+  }
+
+  .nav_container {
+    justify-content: center;
+  }
+  .img_logo {
+    display: flex;
+    justify-content: center;
   }
 }
 
