@@ -27,11 +27,11 @@
     <link rel="stylesheet" href="../css/media.css" />
   </head>
 
-  <body class="body">
+  <body class="body flex flex-column">
     <header>
       <nav class="nav">
         <div class="nav_container">
-          <a href="./inicio.html"><img src="../img/logo.jpg" class="nav_logo" /></a>
+          <a class="img_logo" href="./inicio.html"><img src="../img/logo.jpg" class="nav_logo" /></a>
           <label for="menu" class="nav_label">
             <i class="fa-sharp fa-solid fa-bars logo_menu"></i>
           </label>
@@ -45,6 +45,15 @@
             </li>
             <li><a href="./fechas.html" class="nav_item">Próximas fechas</a></li>
           </div>
+        </div>
+
+        <div class="nav_menu2">
+          <li><a href="./inicio.html" class="nav_item2">Inicio</a></li>
+          <li><a href="./integrantes.html" class="nav_item2">Integrantes</a></li>
+          <li>
+            <a href="./discografia.html" class="nav_item2">Discografía</a>
+          </li>
+          <li><a href="./fechas.html" class="nav_item2">Próximas fechas</a></li>
         </div>
       </nav>
     </header>
@@ -122,7 +131,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer flex justify-center align-center">
       <div class="footer_container flex justify-center align-center flex-column">
         <img src="../img/logo.jpg" alt="logo" />
 
