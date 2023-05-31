@@ -42,6 +42,18 @@
   letter-spacing: 4px;
   color: var(--blanco);
 }
+/* ==================== INDEX ================ */
+.container_index {
+  width: 100%;
+}
+
+.a_index {
+  width: 90%;
+}
+
+.img_index {
+  width: 100%;
+}
 
 /* =============== HEADER =============== */
 
@@ -506,6 +518,15 @@ header {
   .frase {
     font-size: 30px;
   }
+
+  .container_index {
+    width: 100%;
+    padding: 2rem;
+  }
+  .a_index {
+    width: 60%;
+    margin-top: 1rem;
+  }
 }
 
 @media (min-width: 900px) {
@@ -534,10 +555,10 @@ header {
   }
   .container_index {
     width: 100%;
-    padding: 4rem;
+    padding: 2rem;
   }
   .a_index {
-    width: 70%;
+    width: 40%;
     margin-top: 1rem;
   }
 
@@ -566,16 +587,4 @@ header {
     display: flex;
     justify-content: center;
   }
-}
-
-.container_index {
-  width: 100%;
-}
-
-.a_index {
-  width: 90%;
-}
-
-.img_index {
-  width: 100%;
 }
