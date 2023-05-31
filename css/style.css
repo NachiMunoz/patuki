@@ -40,6 +40,7 @@
   background-size: cover;
   font-family: "Saira Stencil One", cursive;
   letter-spacing: 4px;
+  color: var(--blanco);
 }
 
 /* =============== HEADER =============== */
@@ -182,6 +183,13 @@ header {
 
 /* =============== SCROLLER =============== */
 
+.caja_formulario {
+  width: 100%;
+}
+.formulario {
+  width: 50%;
+  color: var(--blanco);
+}
 /* =============== FRASE=============== */
 .frase {
   background-image: url(../img/arena.jpg);
@@ -362,6 +370,16 @@ header {
   filter: drop-shadow(0 0 4px var(--blanco));
 }
 
+.hidden {
+  opacity: 0;
+  transition: all 600ms;
+}
+
+.visible {
+  opacity: 1;
+  transition: all 600ms;
+}
+
 /* =============== INTEGRANTES =============== */
 
 /* =============== FOOTER =============== */
@@ -509,8 +527,24 @@ header {
   .integrantes {
     font-size: 40px;
   }
+  .container_index {
+    width: 100%;
+    padding: 4rem;
+  }
+  .a_index {
+    width: 70%;
+    margin-top: 1rem;
+  }
+}
+
+.container_index {
+  width: 100%;
+}
+
+.a_index {
+  width: 90%;
 }
 
 .img_index {
-  padding: 4em;
+  width: 100%;
 }

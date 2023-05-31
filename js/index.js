@@ -1,6 +1,7 @@
 const unNombre = prompt("Ingrese su nombre");
 function saludar(nombre) {
-  return "Bienvenid@ " + nombre;
+  const h1 = document.querySelector("h1");
+  return (h1.innerHTML = "Bienvenid@ " + nombre);
 }
 
-document.write(saludar(unNombre));
+saludar(unNombre);
