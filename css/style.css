@@ -560,6 +560,7 @@ header {
 
   .nav_container {
     justify-content: center;
+    flex-direction: column;
   }
   .img_logo {
     display: flex;
