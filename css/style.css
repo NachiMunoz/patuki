@@ -589,3 +589,50 @@ header {
     justify-content: center;
   }
 }
+
+.caja_fechas {
+  margin-top: 4rem;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.container_fechas {
+  width: 80%;
+}
+
+.nombre_fecha {
+  font-size: 30px;
+  text-shadow: 0 0 20px var(--rojo);
+}
+
+.container_fechas .p_fechas {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.p_fechas {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--blanco);
+  font-size: 15px;
+  font-weight: 900;
+  padding: 10px;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container_fechas:hover .img_fechas {
+  transform: scale(0.7);
+  transition: all 0.5s;
+}
+
+.container_fechas:hover .p_fechas {
+  opacity: 1;
+  text-align: justify;
+}
