@@ -395,7 +395,51 @@ header {
 }
 
 /* =============== INTEGRANTES =============== */
+/* ============ FECHAS ============= */
+.caja_fechas {
+  margin-top: 1rem;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
 
+.container_fechas {
+  width: 80%;
+}
+
+.nombre_fecha {
+  font-size: 30px;
+  text-shadow: 0 0 20px var(--rojo);
+}
+
+.container_fechas .p_fechas {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.p_fechas {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  color: var(--blanco);
+  font-size: 15px;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container_fechas:hover .img_fechas {
+  transform: scale(0.7);
+  transition: all 0.5s;
+}
+
+.container_fechas:hover .p_fechas {
+  opacity: 1;
+  text-align: center;
+}
+/* =============== FECHAS =============== */
 /* =============== FOOTER =============== */
 .footer {
   background-color: var(--rojo);
@@ -528,6 +572,12 @@ header {
     width: 60%;
     margin-top: 1rem;
   }
+  .nombre_fecha {
+    font-size: 40px;
+  }
+  .p_fechas {
+    font-size: 30px;
+  }
 }
 
 @media (min-width: 900px) {
@@ -588,48 +638,17 @@ header {
     display: flex;
     justify-content: center;
   }
-}
+  .container_fechas {
+    width: 50%;
+  }
+  .nombre_fecha {
+    font-size: 50px;
+  }
+  .p_fechas {
+    font-size: 40px;
+  }
 
-.caja_fechas {
-  margin-top: 1rem;
-  position: relative;
-  width: 100%;
-  text-align: center;
-}
-
-.container_fechas {
-  width: 80%;
-}
-
-.nombre_fecha {
-  font-size: 30px;
-  text-shadow: 0 0 20px var(--rojo);
-}
-
-.container_fechas .p_fechas {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.p_fechas {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--blanco);
-  font-size: 15px;
-  border-radius: 8px;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.container_fechas:hover .img_fechas {
-  transform: scale(0.7);
-  transition: all 0.5s;
-}
-
-.container_fechas:hover .p_fechas {
-  opacity: 1;
-  text-align: center;
+  .img_fechas {
+    width: 100%;
+  }
 }
